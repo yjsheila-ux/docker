@@ -9,8 +9,8 @@ services:
   db:
     image: mysql:8.0
     environment:
-      MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: app_db 
+      MYSQL_ROOT_PASSWORD: #{password}
+      MYSQL_DATABASE: #{db} 
     ports:
       - "33061:3306"
         # MYSQL = 3306 포트번호
